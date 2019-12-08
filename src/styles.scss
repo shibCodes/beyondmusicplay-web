@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto&display=swap');
+@import 'colours';
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;   
+    min-height: 100%;
+}
+
+html {
+    background: rgb(73,72,72);
+    background: linear-gradient(350deg, rgba(73,72,72,1) 0%, rgba(73,72,72,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+}

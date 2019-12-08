@@ -1,0 +1,21 @@
+
+.background-line {
+    background: repeating-linear-gradient(
+        45deg,
+        #50E3C2,
+        #50E3C2 8px,
+        #333333 2px,
+        #333333 10px
+    );
+    height: 40px;
+}
+
+.logo {
+    max-width: 260px;
+    margin: -25px 0 0 60px;
+
+    @media all and (max-width: 600px) {
+        width: 200px;
+        margin: -20px 0 0 40px;
+    }
+}

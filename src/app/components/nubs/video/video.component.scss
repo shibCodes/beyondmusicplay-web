@@ -1,0 +1,83 @@
+@import '../../../../colours';
+@import '../../../../animations';
+
+.video {
+    color: $fontColourBody;
+    max-width: 285px;
+    overflow: hidden;
+    margin: 0 20px;
+    padding: 20px 0;
+
+    .image-wrap {
+        height: 160px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: 50% 50%;
+            width: 100%;
+            height: 100%;
+            transition: all 0.2s;
+        }
+
+        .title-wrap {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+            min-height: 52px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 10px;
+
+            .title {
+                color: $fontColourTitle;
+                font-family: 'Alfa Slab One', cursive;
+                width: 70%;
+                transition: all 0.2s;
+            }
+
+            .butt-play {
+                width: 28px;
+                height: 28px;
+                background: url(../../../../assets/img/icon-play.svg) center center no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            animation-duration: 0.4s;
+            animation-fill-mode: both;
+            animation-name: pulse;
+            
+            img {
+                transform: rotate(5deg) scale(1.2);
+            }
+
+            .title-wrap {
+                .title {
+                    color: white;
+                }
+            }
+            
+        }
+    }
+
+    .info-wrap {
+        
+        .published {
+            font-size: 0.8em;
+            color: $fontColourSubtitle;
+            padding: 10px 0;
+        }
+
+        .description {
+            font-size: 0.75em;
+            color: $fontColourBody;
+        }
+
+    }
+}

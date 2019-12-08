@@ -1,0 +1,12 @@
+<section class="section-splash">
+
+    <div class="logo-wrap fade-in">
+        <img src="../../../../assets/img/logo.svg" alt="{{ appTitle }}" />
+    </div>
+
+    <button class="butt-enter" [ngClass]="{'fade-in': buttonFadeIn}" (animationend)="animationEnd($event)" (click)="enterSite()">
+        <div class="animation-bubble"></div>
+        <div class="title">Enter</div>
+    </button>
+
+</section>

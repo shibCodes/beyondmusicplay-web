@@ -1,0 +1,68 @@
+@import '../../../../colours';
+@import '../../../../animations';
+
+.section-splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .logo-wrap {
+        width: 80%;
+    }
+
+    .butt-enter {
+        width: 250px;
+        height: 50px;
+        font-family: 'Alfa Slab One', cursive;
+        background: $highlightMain;
+        color: $bgMain;
+        border: none;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        border-radius: 40px;
+        outline: none;
+        cursor: pointer;
+        margin-top: 40px;
+        overflow: hidden;
+
+        &.fade-in {
+            animation-delay: 1s;
+        }
+
+        .animation-bubble {
+            position: absolute;
+            pointer-events: none;
+            background: black;
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            transform: scale(0, 0);
+            left: calc(50% - 10px);
+            top: 75%;
+            border-radius: 20px;
+            transition: transform 0.6s ease-out;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            animation-duration: 0.4s;
+            animation-fill-mode: both;
+            animation-name: pulse;
+    
+            .animation-bubble {
+                opacity: 0.2;
+                transform: scale(20, 20);
+                transition: transform 0.6s ease-out;
+            }
+        }
+    }
+
+    .fade-in {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
+    }
+
+}

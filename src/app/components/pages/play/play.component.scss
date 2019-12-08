@@ -1,0 +1,91 @@
+@import '../../../../colours';
+@import '../../../../animations';
+
+.section-play {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: $fontColourBody;
+    padding: 40px 60px;
+    margin: 0 auto;
+
+    @media all and (max-width: 550px) {
+        padding: 40px 0;
+        width: 80%;
+    }
+
+    .info-wrap {
+        padding: 0 25px;
+        width: 300px;
+
+        @media all and (max-width: 819px) {
+            max-width: 600px;
+            width: 100%;
+            padding: 0;
+        }
+
+        .title {
+            color: $fontColourTitle;
+            font-family: 'Alfa Slab One', cursive;
+        }
+
+        .published {
+            font-size: 0.8em;
+            color: $fontColourSubtitle;
+            padding: 10px 0;
+        }
+
+        .description {
+            font-size: 0.75em;
+            color: $fontColourBody;
+        }
+
+        .butt-back {
+            height: 15px;
+            border: none;
+            background: transparent;
+            color: $fontColourTitle;
+            background: url(../../../../assets/img/icon-back.svg) left center no-repeat;
+            padding-left: 20px;
+            outline: none;
+            font-family: 'Roboto', sans-serif;  
+            font-size: 0.8em;
+            margin-top: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation-duration: 0.4s;
+                animation-fill-mode: both;
+                animation-name: pulse;
+            }
+        }
+    }
+
+    .video-wrap {
+        position: relative;
+        max-width: 600px;
+        min-width: 300px;
+        flex: 1;
+        margin-bottom: 30px;
+
+        .youtube-wrap {
+            position: relative;
+            padding-bottom: 56%;
+            width: 100%;
+            text-align: left;
+    
+            iframe {
+                width: 100%;
+                position: absolute;
+                height: 100%;
+                overflow: hidden;
+            }
+    
+        }
+    }
+
+    
+}

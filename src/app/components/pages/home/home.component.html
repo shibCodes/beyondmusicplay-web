@@ -1,0 +1,7 @@
+<app-header></app-header>
+<section class="section-home">
+    <p *ngIf="showNoVideosMessage">Oops! There are no videos available at the moment!</p>
+    <div class="videos-wrap">
+        <app-video *ngFor="let video of allVideos" [videoDetails]="video"></app-video>
+    </div>
+</section>

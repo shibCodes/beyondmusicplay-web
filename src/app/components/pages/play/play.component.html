@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<section class="section-play">
+
+    <div class="video-wrap">
+        <div class="youtube-wrap">
+                <iframe width="560" height="315" [src]="getVideoURL()" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+
+    <div class="info-wrap">
+        <div class="title">{{ selectedVideo.title }}</div>
+        <div class="published">Published on {{ selectedVideo.published | date }}</div>
+        <div class="description">{{ selectedVideo.description }}</div>
+        <button class="butt-back" (click)="goBack()">Back to list</button>
+    </div>
+
+</section>

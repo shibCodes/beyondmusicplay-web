@@ -1,0 +1,17 @@
+@import '../../../../colours';
+
+
+.videos-wrap {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    @media all and (max-width: 1023px) {
+        justify-content: center;
+    }
+}

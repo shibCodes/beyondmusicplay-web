@@ -1,0 +1,13 @@
+<div class="video">
+    <div class="image-wrap" (click)="goToVideo()">
+        <img src="{{ videoDetails.img }}" />
+        <div class="title-wrap">
+            <div class="title">{{ videoDetails.title }}</div>
+            <div class="butt-play"></div>
+        </div>
+    </div>
+    <div class="info-wrap">
+        <div class="published">Published on {{ videoDetails.published | date }}</div>
+        <div class="description">{{ videoDetails.summary_description }}</div>
+    </div>
+</div>
