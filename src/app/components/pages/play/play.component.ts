@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class PagePlayComponent implements OnInit {
     selectedVideoSubscription:Subscription;
-    selectedVideo:object;
+    selectedVideo:any;
     videoBaseURL:string = "https://www.youtube.com/embed/";
     videoURL:string = "https://www.youtube.com/embed/";
 

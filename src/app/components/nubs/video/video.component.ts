@@ -8,7 +8,7 @@ import { YoutubeService } from 'src/app/services/youtube.service';
     styleUrls: ['./video.component.scss']
 })
 export class VideoComponent implements OnInit {
-    @Input() videoDetails:object;
+    @Input() videoDetails:any;
 
     constructor(private router:Router, private youtubeService:YoutubeService) { }
 
